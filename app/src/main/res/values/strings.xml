@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NtrLabTest</string>
+
+    <string name="actionRefresh">Обновить</string>
+
+    <string name="fieldName">Имя:</string>
+    <string name="fieldPhone">Номер телефона:</string>
+    <string name="fieldAddress">Адрес:</string>
+    <string name="fieldDateOpened">Дата открытия:</string>
+    <string name="fieldType">Тип:</string>
+    <string name="snack_network_error">Не удалось загрузить данные</string>
+    <string name="snack_action_retry">повторить</string>
+    <string name="error_load_data">Не удалось загрузить данные. Нажмите кнопку вверху экрана, чтобы попробовать еще раз</string>
+</resources>
