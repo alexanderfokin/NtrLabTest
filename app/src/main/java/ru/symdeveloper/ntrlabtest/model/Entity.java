@@ -34,9 +34,16 @@ public class Entity {
     public String getName() {
         return name;
     }
-    public @Nullable String getType() { return type; }
 
-    public @Nullable String getDateOpened() {
+    public
+    @Nullable
+    String getType() {
+        return type;
+    }
+
+    public
+    @Nullable
+    String getDateOpened() {
         if (!TextUtils.isEmpty(date_opened)) {
             Date parsedDate = null;
             try {
@@ -49,9 +56,18 @@ public class Entity {
             }
             return "";
         }
-        return date_opened; }
-    public @Nullable String getPhone() { return phone; }
-    public @Nullable String getAddress() {
+        return date_opened;
+    }
+
+    public
+    @Nullable
+    String getPhone() {
+        return phone;
+    }
+
+    public
+    @Nullable
+    String getAddress() {
         if (address != null) {
             return address.toString();
         } else {
@@ -78,7 +94,10 @@ public class Entity {
         private double gps_lng;
 
         public String toString() {
-            return "";
+            StringBuilder builder = new StringBuilder();
+            builder.append(zip).append(", ").append(country).append(", ").append(area).append(", ")
+                    .append(city).append(", ").append(street).append(", ").append(house);
+            return builder.toString();
         }
     }
 
